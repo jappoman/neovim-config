@@ -24,6 +24,7 @@ return {
   })
   end,
   dependencies = {
-    "nvim-lua/plenary.nvim",
+    "2kabhishek/utils.nvim",
+    "nvim-lua/plenary.nvim"
   }
 }

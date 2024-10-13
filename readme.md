@@ -14,6 +14,7 @@ sudo apt install fd-find -y
 wget https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip -O /tmp/win32yank.zip
 unzip /tmp/win32yank.zip -d /tmp/win32yank
 sudo mv /tmp/win32yank/win32yank.exe /usr/local/bin/
+sudo chmod +x /usr/local/bin/win32yank.exe
 export PATH=$PATH:/usr/local/bin
 sudo apt install nodejs npm -y
 sudo npm install -g bash-language-server
@@ -33,12 +34,13 @@ rm nvim-linux64.tar.gz
 ```
 3. Configure git user
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "Your Email"
+git config --global user.name "jappoman"
+git config --global user.email "gabriele.tarenzi@gmail.com"
 ```
 4. Clone this repository to `~/.config/nvim`
 ```bash
 mkdir -p ~/.config
-mkdir -p ~/.config/lazygit
 git clone https://github.com/jappoman/neovim-config.git ~/.config
+mkdir -p ~/.config/lazygit
 ```
+5. Launch Neovim and run `:Lazy update` to update all plugins.

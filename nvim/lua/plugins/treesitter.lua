@@ -5,7 +5,7 @@ return {
     config = function()
       require("nvim-treesitter.configs").setup({
         -- Aggiungi i linguaggi che desideri qui
-        ensure_installed = { "bash", "regex",}, -- Puoi specificare i linguaggi
+        ensure_installed = { "bash", "regex"}, -- Puoi specificare i linguaggi
         highlight = {
           enable = true,                                   -- Abilita l'evidenziazione della sintassi
         },

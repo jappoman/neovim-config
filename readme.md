@@ -27,6 +27,7 @@ rm lazygit lazygit.tar.gz
 2. Install Neovim
 ```bash
 sudo snap install nvim --classic
+rm -rf snap
 ```
 3. Configure git user
 ```bash

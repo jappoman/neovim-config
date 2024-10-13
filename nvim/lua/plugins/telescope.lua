@@ -17,8 +17,6 @@ return {
       })
       -- Carica l'estensione del file browser
       require("telescope").load_extension("file_browser")
-      -- Carica l'estensione octohub per i repository
-      require("telescope").load_extension("repos")
     end
   }
 }

@@ -5,6 +5,11 @@ vim.wo.number = true
 -- Hide default diagnostic
 vim.diagnostic.config({ virtual_text = false })
 
+vim.fn.sign_define("DiagnosticSignError", { text = "", numhl = "DiagnosticError" })
+vim.fn.sign_define("DiagnosticSignWarn",  { text = "", numhl = "DiagnosticWarn" })
+vim.fn.sign_define("DiagnosticSignInfo",  { text = "", numhl = "DiagnosticInfo" })
+vim.fn.sign_define("DiagnosticSignHint",  { text = "", numhl = "DiagnosticHint" })
+
 -- Mappature con leader key
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }

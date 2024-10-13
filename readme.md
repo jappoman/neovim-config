@@ -11,6 +11,7 @@ sudo apt install unzip -y
 sudo apt install luarocks -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
+sudo apt-get install shellcheck -y
 wget https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip -O /tmp/win32yank.zip
 unzip /tmp/win32yank.zip -d /tmp/win32yank
 sudo mv /tmp/win32yank/win32yank.exe /usr/local/bin/

@@ -14,6 +14,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "bashls",                            -- Bash
+          "clangd",                            -- C/C++
         },
         automatic_installation = true,         -- Installa automaticamente i server LSP
       })
@@ -26,8 +27,11 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
 
-      -- Configurazione per ogni LSP
+      -- Configurazione per Bash
       lspconfig.bashls.setup {}
+
+      -- Configurazione per C/C++
+      lspconfig.clangd.setup {}
     end
   }
 }

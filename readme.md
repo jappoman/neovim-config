@@ -1,5 +1,5 @@
 # Neovim Configuration
-This is the Neovim configuration I'm currently using. I recently started using Neovim for bash scripting and want to begin with a basic setup. This will be a work in progress for a while. Who knows, maybe I'll switch to Neovim completely in the future.
+This is the Neovim configuration I'm currently using. I recently started using Neovim for bash scripting and simple C programming and want to begin with a basic setup. This will be a work in progress for a while. Who knows, maybe I'll switch to Neovim completely in the future.
 
 ## Installation
 1. Install all dependencies
@@ -19,6 +19,7 @@ sudo chmod +x /usr/local/bin/win32yank.exe
 export PATH=$PATH:/usr/local/bin
 sudo apt install nodejs npm -y
 sudo npm install -g bash-language-server
+sudo apt install clangd -y
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 tar xf lazygit.tar.gz lazygit

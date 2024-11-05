@@ -28,3 +28,8 @@ map('n', '<leader>fe', ':Telescope file_browser<CR>', opts)
 
 -- <leader>ft -> Apri l'albero dei file usando nvim-tree
 map('n', '<leader>ft', ':NvimTreeToggle<CR>', opts)
+
+-- Configurazioni di indentazione
+vim.opt.tabstop = 2       -- Visualizza Tab come due spazi
+vim.opt.shiftwidth = 2    -- Imposta l'indentazione automatica a due spazi
+vim.opt.expandtab = true  -- Usa spazi invece di Tab
